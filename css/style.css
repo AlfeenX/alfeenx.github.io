@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    background-color:#E2EAF4;
+    font-family: Poppins, Roboto, sans-serif;
+}
+
+/* CSS navbar */
+.navigasi {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #E2EAF4;
+}
+
+.portofolio {
+    color: blueviolet;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size:22px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #E2EAF4;
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid blueviolet;
+    border-radius:15px;
+    background-color:blueviolet;
+    font-weight: 500;
+}
+
+.nav:last-child {
+    margin-right: 10px;
+}
+
+.nav:hover {
+    background-color: #E2EAF4;
+    color:blueviolet;
+}
+
+
+/* Ini CSS Home*/
+.content1 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #E2EAF4;
+}
+
+
+.text-content {
+    height: 90vh;
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.nama {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom:15px;
+    line-height: 50px;
+}
+
+.profesi {
+    background-color: blueviolet;
+    color: #E2EAF4;
+    padding: 4px;
+    margin:0;
+    width: 175px;
+    border-radius: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.deskripsi {
+    text-align: justify;
+    margin-right: 10px;
+    line-height:25px;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2em;
+    margin: 0 10px 30px 0;
+
+}
+
+h4 {
+   text-align: center;
+   margin-right: 10px;
+}
+
+.bahasa {
+    height:2em;
+    color: blueviolet;
+}
+
+.images {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex: 1;
+}
+
+.ilustrasi {
+    width: 400px;
+    background-color: blueviolet;
+    border-radius: 50% 0 0 50%;
+}
+
+
+/* CSS About Me*/
+.content2 {
+    background-color: blueviolet;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.title {
+    text-align: center;
+    color: #E2EAF4;
+    width: 100%;
+}
+
+.profile {
+    height: 200px;
+    width:200px;
+    border: 5px solid #E2EAF4;
+    border-radius: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.container-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+    border: 2px solid #E2EAF4;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    padding: 0 10px 0 10px;
+    color: #E2EAF4;
+}
+
+.icon {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.card p {
+    text-align: justify;
+    margin: 0;
+}
+
+/*contact*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 10px;
+    height:100%;
+    background-color: #6717B2;
+    color: #E2EAF4;
+    padding-top: 10px;
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 500px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    height: 20px;
+}
+
+.n-contact {
+    width: 100%;
+    height: 20px;
+    margin: 0 0 0 10px;
+    color: #E2EAF4;
+    text-decoration: none;
+}
+
+.contact img {
+    width: 100%;
+    margin: 0;
+}
+
+.ulasan {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 2px solif #ffff;
+    line-height: 0px;
+    font-size: 14px;
+}
+
+.ulasan textarea{
+    background-color: #E2EAF4;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.ulasan button {
+    width: 80px;
+    height: 20px;
+    align-self: center;
+    background-color: #6717B2;
+    color: #E2EAF4;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.ulasan button:hover {
+    background-color: #E2EAF4;
+    color: #6717B2;
+}
+
+.paten {
+    width: 100%;
+    text-align: center;
+}
