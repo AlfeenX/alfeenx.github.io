@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:#E2EAF4;
-    font-family: Poppins, Roboto, sans-serif;
+    font-family: Popins, Roboto, sans-serif;
 }
 
 /* CSS navbar */
@@ -248,6 +248,7 @@ h4 {
     background-color: #E2EAF4;
     border-radius: 15px;
     margin-top: 10px;
+    font-family: Poppins;
 }
 
 .ulasan button {
