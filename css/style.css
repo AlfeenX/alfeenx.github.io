@@ -251,6 +251,11 @@ h4 {
     font-family: Poppins;
 }
 
+.ulasan textarea::placeholder {
+    font-family: Poppins;
+    font-size: 14px;
+}
+
 .ulasan button {
     width: 80px;
     height: 20px;
