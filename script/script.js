@@ -56,6 +56,8 @@ $(document).ready(function () {
   });
 });
 
+
+// ===== SMOOTH SCROLLING =====
 $('a[href^="#"]').on('click', function(e) {
   e.preventDefault();
   const target = $(this.getAttribute('href'));
@@ -65,6 +67,13 @@ $('a[href^="#"]').on('click', function(e) {
     }, 800, 'easeInOutQuad');
   }
 });
+
+if (!jQuery.easing.easeInOutQuad) {
+  jQuery.easing.easeInOutQuad = function(x, t, b, c, d) {
+    if ((t /= d / 2) < 1) return c / 2 * t * t + b;
+    return -c / 2 * ((--t) * (t - 2) - 1) + b;
+  };
+}
 
 // ===== FORM HANDLING =====
 const form = document.getElementById("contact-form");
