@@ -3,159 +3,371 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portofolio | Alfin Bachtiar</title>
+    <title>Alfin Bachtiar | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="" class="option">Home</a></li>
-        <li><a href="" class="option">About</a></li>
-        <li><a href="" class="option">Project</a></li>
-        <li><a href="" class="option">Contact</a></li>
-      </ul>
+  <body class="bg-gradient-to-br from-slate-50 via-white to-slate-50">
+    <!-- Premium Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="none"
+              stroke="url(#gradient)"
+              stroke-width="3"
+              class="svg-circle"
+            />
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #3b82f6; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #8b5cf6; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <p class="preloader-text">Preparing the portfolio</p>
+        <div class="preloader-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5"
+      >
+        <a href="#" class="logo-link">
+          <span class="logo-text">AB</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </div>
     </nav>
-    <div class="hero">
-      <div
-        class="wrapper"
-        style="
-          --width: 200px;
-          --height: 50px;
-          --quantity: 10;
-          --animation: scrollLeft;
-          --left: 100%;
-        "
-      >
-        <div class="list">
-          <div class="item" style="--position: 1"><h1>Selamat Datang</h1></div>
-          <div class="item" style="--position: 2"><h1>Welcome</h1></div>
-          <div class="item" style="--position: 3"><h1>Bienvenue</h1></div>
-          <div class="item" style="--position: 4"><h1>Willkommen</h1></div>
-          <div class="item" style="--position: 5"><h1>Bienvenido</h1></div>
-          <div class="item" style="--position: 6"><h1>ようこそ</h1></div>
-          <div class="item" style="--position: 7"><h1>환영합니다</h1></div>
-          <div class="item" style="--position: 8"><h1>欢迎</h1></div>
-          <div class="item" style="--position: 9">
-            <h1>Добро пожаловать</h1>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section p-0 md:p-12">
+        <div class="max-w-6xl mx-auto px-6 py-10 md:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="hero-content">
+              <span class="badge scroll-fade-up">Full Stack Developer</span>
+              <h1
+                class="hero-title scroll-fade-up"
+                style="animation-delay: 0.1s"
+              >
+                Hello, I'm <span class="text-blue-600">Alfin Bachtiar</span>
+              </h1>
+              <p
+                class="hero-subtitle scroll-fade-up"
+                style="animation-delay: 0.2s"
+              >
+                A passionate full-stack developer with love in JavaScript,
+                TypeScript, React, Laravel, and more. Undergraduate student at
+                Universitas Hasyim Asy'ari, Tebuireng, Jombang. Lived in Kediri,
+                Indonesia.
+              </p>
+              <div
+                class="hero-cta scroll-fade-up"
+                style="animation-delay: 0.3s"
+              >
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Let's Talk</a>
+              </div>
+            </div>
+            <div
+              class="hero-image scroll-fade-right"
+              style="animation-delay: 0.15s"
+            >
+              <div class="image-wrapper">
+                <img src="assets/profile.webp" alt="Alfin Bachtiar" />
+              </div>
+            </div>
           </div>
-          <div class="item" style="--position: 10"><h1>أهلاً وسهلاً</h1></div>
         </div>
-      </div>
-      <div class="cta">
-        <h1 class="first-name">ALFIN</h1>
-        <h1 class="last-name">BACHTIAR</h1>
-      </div>
-      <div
-        class="wrapper"
-        style="
-          --width: 200px;
-          --height: 50px;
-          --quantity: 10;
-          --animation: scrollRight;
-          --left: -300px;
-        "
-      >
-        <div class="list">
-          <div class="item" style="--position: 1"><h1>Selamat Datang</h1></div>
-          <div class="item" style="--position: 2"><h1>Welcome</h1></div>
-          <div class="item" style="--position: 3"><h1>Bienvenue</h1></div>
-          <div class="item" style="--position: 4"><h1>Willkommen</h1></div>
-          <div class="item" style="--position: 5"><h1>Bienvenido</h1></div>
-          <div class="item" style="--position: 6"><h1>ようこそ</h1></div>
-          <div class="item" style="--position: 7"><h1>환영합니다</h1></div>
-          <div class="item" style="--position: 8"><h1>欢迎</h1></div>
-          <div class="item" style="--position: 9">
-            <h1>Добро пожаловать</h1>
-          </div>
-          <div class="item" style="--position: 10"><h1>أهلاً وسهلاً</h1></div>
-        </div>
-      </div>
-    </div>
-    <div class="content">
-      <section class="container-section">
-        <div class="title">
-          <h1 class="title-front">ABOUT</h1>
-          <h1 class="title-back">ABOUT</h1>
-        </div>
-        <div class="content-about">
-          <h3>ALFIN BACHTIAR</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, velit.
-            Sunt vel delectus porro excepturi facere ad nihil culpa, praesentium
-            animi sint beatae perspiciatis ipsam voluptatum fugit quis
-            perferendis natus ratione dolor libero accusamus architecto totam
-            provident doloribus. Omnis nihil vero qui consequatur nam fuga,
-            facilis placeat ipsam voluptatem temporibus asperiores labore, eos,
-            quae a ullam itaque quasi sit deserunt corporis ipsum. Consectetur
-            exercitationem sapiente beatae eaque vero quo enim odio quam
-            voluptates quaerat id autem, aspernatur fugiat veritatis culpa
-            repellat neque ipsa quis suscipit laborum sit. Explicabo delectus
-            voluptatibus voluptates sit reiciendis, at ipsa dolorem quidem
-            placeat, et cupiditate.
-          </p>
-        </div>
-        <div class="image"></div>
       </section>
-      <hr>
-      <section class="container-section project">
-        <div class="title">
-          <h1 class="title-front">PROJECT</h1>
-          <h1 class="title-back">PROJECT</h1>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <div class="project-info">
-              <h4>Project</h4>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="max-w-6xl mx-auto px-6 py-24">
+          <h2 class="section-title scroll-fade-up">About Me</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+            <div
+              class="about-card scroll-fade-up"
+              style="animation-delay: 0.1s"
+            >
+              <div class="card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4m0 6l-4 4m0-6l4-4m-4 4l-4-4m0 6l-4 4"
+                  />
+                </svg>
+              </div>
+              <h3>Design Focused</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate doloremque maiores nulla recusandae! Exercitationem
-                voluptatem officiis quis nihil pariatur! Ipsam.
+                Creating intuitive interfaces that users love. Every pixel
+                matters in delivering exceptional experiences.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="project-info">
-              <h4>Project</h4>
+            <div
+              class="about-card scroll-fade-up"
+              style="animation-delay: 0.2s"
+            >
+              <div class="card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                  />
+                </svg>
+              </div>
+              <h3>Code Quality</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate doloremque maiores nulla recusandae! Exercitationem
-                voluptatem officiis quis nihil pariatur! Ipsam.
+                Writing maintainable, scalable code following best practices and
+                modern development standards.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <div class="project-info">
-              <h4>Project</h4>
+            <div
+              class="about-card scroll-fade-up"
+              style="animation-delay: 0.3s"
+            >
+              <div class="card-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3>Performance</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate doloremque maiores nulla recusandae! Exercitationem
-                voluptatem officiis quis nihil pariatur! Ipsam.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="project-info">
-              <h4>Project</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate doloremque maiores nulla recusandae! Exercitationem
-                voluptatem officiis quis nihil pariatur! Ipsam.
+                Building fast, optimized applications that deliver smooth
+                experiences across all devices.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <div class="separator">
-        <hr>
-      </div>
-      <section class="container-section">
-        <div class="title">
-          <h1 class="title-front">CONTACT</h1>
-          <h1 class="title-back">CONTACT</h1>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="max-w-6xl mx-auto px-6 py-24">
+          <h2 class="section-title scroll-fade-up">Technologies I Use</h2>
+          <div class="skills-grid mt-12">
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.05s"
+            >
+              <span>JavaScript</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.1s"
+            >
+              <span>TypeScript</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.15s"
+            >
+              <span>React</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.2s"
+            >
+              <span>Laravel</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.25s"
+            >
+              <span>Node.js</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.3s"
+            >
+              <span>PHP</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.35s"
+            >
+              <span>Python</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.4s"
+            >
+              <span>MongoDB</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.45s"
+            >
+              <span>PostgreSQL</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.5s"
+            >
+              <span>Tailwind CSS</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.55s"
+            >
+              <span>Git</span>
+            </div>
+            <div
+              class="skill-item scroll-fade-up"
+              style="animation-delay: 0.6s"
+            >
+              <span>Docker</span>
+            </div>
+          </div>
         </div>
       </section>
-    </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="max-w-6xl mx-auto px-6 py-24">
+          <h2 class="section-title scroll-fade-up">Featured Projects</h2>
+          <div class="projects-grid mt-16" id="project-list"></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="max-w-4xl mx-auto px-6 py-32">
+          <div class="contact-content">
+            <h2
+              class="text-4xl md:text-5xl font-bold mb-4 text-white scroll-fade-up"
+            >
+              Let's Create Something Great
+            </h2>
+            <p
+              class="text-xl text-blue-100 mb-12 scroll-fade-up"
+              style="animation-delay: 0.1s"
+            >
+              Have a project in mind? Let's work together to bring your ideas to
+              life.
+            </p>
+            <form
+              class="contact-form scroll-fade-up"
+              style="animation-delay: 0.2s"
+              id="contact-form"
+              method="POST"
+              action="https://formspree.io/f/mnjqyoab"
+            >
+            <p id="contact-form-status"></p>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div
+              class="social-links scroll-fade-up"
+              style="animation-delay: 0.3s"
+            >
+              <a
+                href="https://www.facebook.com/alfin.prj.7/"
+                target="_blank"
+                title="Facebook"
+                >Facebook</a
+              >
+              <a
+                href="https://www.instagram.com/alfnb_/"
+                target="_blank"
+                title="Instagram"
+                >Instagram</a
+              >
+              <a
+                href="https://www.linkedin.com/in/alfin-bachtiar-7bb4572aa"
+                target="_blank"
+                title="LinkedIn"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <p>&copy; 2025 Alfin Bachtiar. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script/jquery-3.7.1.min.js"></script>
+    <script src="./script/script.js"></script>
   </body>
-  <script src="./script/jquery-3.7.1.min.js"></script>
-  <script src="./script/script.js"></script>
 </html>
