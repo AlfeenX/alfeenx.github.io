@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Futscope",
+    "description": "A Website for booking futsal fields online with Laravel Framework.",
+    "link": "https://github.com/AlfeenX/futscope"
+  },
+  {
+    "title": "Company Profile Project",
+    "description": "Company profile with vanilla HTML and CSS only. Responsive design and modern layout.",
+    "link": "https://github.com/AlfeenX/company-profile-project"
+  },
+  {
+    "title": "Company Profile - BISI International Tbk (Unofficial)",
+    "description": "An Unofficial Company Profile with Vanilla HTML and CSS - BISI International Tbk.",
+    "link": "https://github.com/AlfeenX/Company-Profile-II"
+  },
+  {
+    "title": "Cuaca.now",
+    "description": "A weather application built with React and Tailwind CSS.",
+    "link": "https://github.com/AlfeenX/cuaca.now"
+  }
+]
